@@ -66,6 +66,10 @@
             background-color: rgb(81, 133, 134);
         }
 
+        .invert {
+            filter: invert(100%);
+        }
+
         @media only screen and (max-width: 800px),
         only screen and (max-height: 600px) {
 
@@ -93,6 +97,7 @@
             }
 
             .avatar {
+                background-color: #8a786e;
                 display: block;
                 float: unset;
                 margin: auto;
@@ -115,10 +120,6 @@
             }
         }
     </style>
-    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js">
-    </script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js">
-    </script>
 </head>
 
 <body>
@@ -131,12 +132,10 @@
         </div>
         <div class="social-links">
             <a class="social-link" href="https://www.linkedin.com/in/lawsoncaleb/">
-                <ion-icon name="logo-linkedin">
-                </ion-icon> LinkedIn
+                <img src="img/linkedin.svg" width="20px" height="20px" class="invert"> LinkedIn
             </a>
             <a class="social-link" href="https://github.com/calebglawson">
-                <ion-icon name="logo-github">
-                </ion-icon> GitHub
+                <img src="img/github.svg" width="20px" height="20px" class="invert"> GitHub
             </a>
         </div>
     </div>
