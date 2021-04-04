@@ -2,32 +2,133 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta charset="utf-8">
-    <title>Caleb Lawson | Software Engineer</title>
-    <meta name="Resume, Landing, Portfolio Site" content="Links and things.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caleb Lawson</title>
+    <meta name="Landing Site" content="Links and things.">
+
+    <style>
+        html {
+            background-color: azure;
+        }
+
+        .card {
+            background-color: powderblue;
+            border-radius: 2px;
+            height: 500px;
+            left: 50%;
+            padding: 1em 2em;
+            position: fixed;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 700px;
+        }
+
+        .title {
+            font-size: 4em;
+            margin: 0 0 10px 0;
+        }
+
+        .avatar {
+            border-radius: 2px;
+            float: left;
+            padding: 0 1em 1em 0;
+        }
+
+        .blurb {
+            font-size: 1.25em;
+            padding-top: 100px;
+            text-align: justify;
+        }
+
+        .social-links {
+            clear: left;
+            padding-top: 1em;
+            text-align: center;
+        }
+
+        .social-link {
+            background-color: cadetblue;
+            border-radius: 3px;
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            margin: 0 120px 0 120px;
+            padding: .66em;
+            text-decoration: none;
+            transition-duration: 0.3s;
+        }
+
+        .social-link:hover {
+            background-color: rgb(81, 133, 134);
+        }
+
+        @media only screen and (max-width: 800px),
+        only screen and (max-height: 600px) {
+
+            .title {
+                font-size: 3em;
+                text-align: center;
+            }
+
+            .card {
+                background-color: unset;
+                border-radius: unset;
+                height: unset;
+                left: unset;
+                padding: unset;
+                position: unset;
+                top: unset;
+                transform: unset;
+                width: 100%;
+            }
+
+            .avatar {
+                display: block;
+                float: unset;
+                margin: auto;
+                padding: 0;
+            }
+
+            .blurb {
+                margin: auto;
+                max-width: 500px;
+                padding: 1em 0 2em 0;
+                width: 90%;
+            }
+
+            .social-links {
+                padding: 0 0 1em 0;
+            }
+
+            .social-link {
+                margin: 0 1em 0 1em;
+            }
+        }
+    </style>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js">
+    </script>
 </head>
 
 <body>
-    <div
-        style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 500px; width: 700px; background-color: beige; padding: 1em 2em; border-radius: 2px">
+    <div class="card">
         <div>
-            <h1 class="title" style="font-size: 4em; margin: 0 0 10px 0;">Caleb Lawson</h1>
-            <img src="http://placekitten.com/g/300/300" ALIGN="left" style="padding: 0 1em 1em 0;" />
-            <p style="font-size: 1.25em;">On the other hand, we denounce with righteous indignation and dislike men who
-                are so beguiled and
-                demoralized
-                by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and
-                trouble
-                that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of
-                will,
-                which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and
-                easy
-                to distinguish.</p>
+            <h1 class="title">Caleb Lawson</h1>
+            <img class="avatar" src="img/avatar.webp" width="300px" />
+            <p class="blurb">&nbsp;&nbsp;&nbsp;&nbsp;Hi! I am a Software Engineer with a passion for data and
+                integrations. I touch all parts of the stack. Python and Golang are my favorite tools.</p>
         </div>
-        <div style="clear:left; text-align: center; padding-top: 2em;">
-            <a href="https://www.linkedin.com/in/lawsoncaleb/">LinkedIn</a>
-            <a href="https://github.com/calebglawson">GitHub</a>
+        <div class="social-links">
+            <a class="social-link" href="https://www.linkedin.com/in/lawsoncaleb/">
+                <ion-icon name="logo-linkedin">
+                </ion-icon> LinkedIn
+            </a>
+            <a class="social-link" href="https://github.com/calebglawson">
+                <ion-icon name="logo-github">
+                </ion-icon> GitHub
+            </a>
         </div>
     </div>
 </body>
