@@ -15,6 +15,7 @@
         .card {
             background-color: powderblue;
             border-radius: 2px;
+            box-shadow: 0px 1px 2px darkgrey;
             height: 500px;
             left: 50%;
             padding: 1em 2em;
@@ -31,11 +32,13 @@
 
         .avatar {
             border-radius: 2px;
+            box-shadow: 0px 1px 2px darkgrey;
             float: left;
-            padding: 0 1em 1em 0;
+            margin: 0 1em 1em 0;
         }
 
         .blurb {
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 1.25em;
             padding-top: 100px;
             text-align: justify;
@@ -66,7 +69,12 @@
         @media only screen and (max-width: 800px),
         only screen and (max-height: 600px) {
 
+            html {
+                background-color: powderblue;
+            }
+
             .title {
+                border-bottom: solid 1px rgb(134, 170, 175);
                 font-size: 3em;
                 text-align: center;
             }
@@ -74,6 +82,7 @@
             .card {
                 background-color: unset;
                 border-radius: unset;
+                box-shadow: unset;
                 height: unset;
                 left: unset;
                 padding: unset;
