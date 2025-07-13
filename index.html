@@ -1,156 +1,86 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caleb Lawson</title>
-    <meta name="Landing Site" content="Links and things.">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
-
-        html {
-            background-color: lightcyan;
-            font-family: 'IBM Plex Serif', serif;
-            min-width: 360px;
-        }
-
-        .card {
-            background-color: darkslategrey;
-            border-radius: 2px;
-            box-shadow: 0px 0px 2px darkslategrey;
-            color: azure;
-            height: 500px;
-            left: 50%;
-            padding: 1em 2em 2em 2em;
-            position: fixed;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 700px;
-        }
-
-        .title {
-            font-size: 4em;
-            margin: 0 0 10px 0;
-        }
-
-        .avatar {
-            border-radius: 2px;
-            box-shadow: 0px 1px 2px rgb(38, 63, 63);
-            float: left;
-            margin: 0 1em 1em 0;
-        }
-
-        .blurb {
-            font-size: 1.25em;
-            padding-top: 100px;
-            text-align: justify;
-        }
-
-        .social-links {
-            clear: left;
-            padding-top: 2em;
-            text-align: center;
-        }
-
-        .social-link {
-            background-color: rgb(70, 114, 114);
-            border-radius: 3px;
-            color: azure;
-            font-size: 1.1em;
-            margin: 0 100px 0 100px;
-            padding: .66em;
-            text-decoration: none;
-            white-space: nowrap;
-        }
-
-        .social-link:hover {
-            background-color: rgb(81, 133, 134);
-            transition-duration: 0.3s;
-
-        }
-
-        .icon {
-            filter: invert(100%);
-            margin-bottom: -2px;
-        }
-
-        @media only screen and (max-width: 800px),
-        only screen and (max-height: 600px) {
-
-            html {
-                background-color: lightcyan;
-            }
-
-            .title {
-                border-bottom: solid 1px rgb(181, 204, 204);
-                font-size: 3em;
-                margin-bottom: .5em;
-                text-align: center;
-            }
-
-            .card {
-                background-color: unset;
-                border-radius: unset;
-                box-shadow: unset;
-                color: unset;
-                height: unset;
-                left: unset;
-                padding: unset;
-                position: unset;
-                top: unset;
-                transform: unset;
-                width: 100%;
-            }
-
-            .avatar {
-                background-color: #8a786e;
-                display: block;
-                float: unset;
-                margin: auto;
-                padding: 0;
-            }
-
-            .blurb {
-                margin: auto;
-                max-width: 500px;
-                padding: 1em 0 2em 0;
-                width: 90%;
-            }
-
-            .social-links {
-                padding: 0 0 1em 0;
-            }
-
-            .social-link {
-                margin: 0 1em 0 1em;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-</head>
-
-<body>
-    <div class="card">
-        <div>
-            <h1 class="title">Caleb Lawson</h1>
-            <img class="avatar" src="img/avatar.webp" width="300px" height="300px" />
-            <p class="blurb">&nbsp;&nbsp;&nbsp;&nbsp;Hi! I am a Software Engineer with a passion for data and
-                integrations. Python and Golang are my favorite tools.</p>
+    <title>Caleb Lawson</title>
+    <meta name="Professional Landing Site" content="Links, experience, skills.">
+  </head>
+  <body>
+    <main class="container">
+      <div style="text-align:center">
+        <h1>Caleb Lawson</h1>
+        <article>
+          <img src="img/avatar.webp">
+          <p></p>
+          <p>Senior Software Engineer with 10 years of experience in building robust software solutions, leading projects, and integrating systems.</p>
+        </article>
+        <div class="grid">
+          <a href="https://www.linkedin.com/in/lawsoncaleb" style="text-align: center"><button><img src="img/linkedin.svg" style="width: 20px; filter: invert(1)"> LinkedIn</button></a>
+          <a href="https://github.com/calebglawson" style="text-align: center"><button><img src="img/github.svg" style="width: 20px; filter: invert(1)"> Github</button></a>
         </div>
-        <div class="social-links">
-            <a class="social-link" href="https://www.linkedin.com/in/lawsoncaleb/">
-                <img src="img/linkedin.svg" width="20px" height="20px" class="icon"> LinkedIn
-            </a>
-            <a class="social-link" href="https://github.com/calebglawson">
-                <img src="img/github.svg" width="20px" height="20px" class="icon"> GitHub
-            </a>
-        </div>
-    </div>
-</body>
-
+        <p></p>
+      </div>
+      <h2>Experience</h2>
+      <article>
+        <header>
+          <i>Mar 2022 – Present</i><br>
+          <b>OLO, New York, NY (Remote)</b><br>
+          Senior Software Engineer II
+        </header>
+        <ul>
+          <li>Developed a new Point of Sale Cloud Agent Integration that processes over 1 million orders per month, supporting major restaurant brands, some with 2,000+ locations.</li>
+          <li>Modernized the packaging for the legacy portion of the Point of Sale Installed Agent, facilitating a seamless migration for existing customers, and on-boarding multiple integrations to the upgraded code-base without extensive rewrites.</li>
+          <li>Finalized and officially released the 1.1 version of the Omnivore API to the public, addressing years-old technical debt.</li>
+          <li>Implemented the first write integration for the next-generation Point of Sale Cloud Agent, enabling the retirement of the legacy integration, conserving resources, and allowing a painless transition for hundreds of restaurants.</li>
+        </ul>
+      </article>
+      <article>
+        <header>
+          <i>Apr 2020 – Mar 2022</i><br>
+          <b>OMNIVORE, Clearwater, FL</b><br>
+          Software Engineer
+        </header>
+        <ul>
+          <li>Engineered the next-generation Point of Sale Installed Agent, achieving seamless integration with existing cloud architecture, supporting hundreds of restaurants.</li>
+        </ul>
+      </article>
+      <article>
+        <header>
+          <i>Jul 2015 – Apr 2020</i><br>
+          <b>HUMANA, Louisville, KY</b><br>
+          Software Engineer II
+        </header>
+        <ul>
+          <li>Served as the Subject Matter Expert for one application and made significant contributions to three applications. Acted as the primary developer point of contact for the production support team.</li>
+          <li>Gained expertise in the BPM platform within two years, led a team of three developers to support a top 50 company application, and successfully facilitated the transfer of production support to the enterprise support department.</li>
+        </ul>
+      </article>
+      <h2>Education</h2>
+      <article>
+        <header>
+          <i>May 2015</i><br>
+          <b>MURRAY STATE UNIVERSITY, Murray, KY</b><br>
+          Bachelor of Science, Computer Science<br>
+        </header>
+        Honors Program graduate, 3.7 GPA.
+      </article>
+      <h2>Additional Skills</h2>
+      <article>
+        <ul>
+          <li>Golang</li>
+          <li>Python</li>
+          <li>API Design</li>
+          <li>Performance Optimization</li>
+          <li>Relational Databases</li>
+        </ul>
+      </article>
+    </main>
+  </body>
 </html>
